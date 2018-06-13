@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Tracker 2.0</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
 
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                <strong>Task Tracker</strong>
+            </h1>
+            <span>v2.0</span>
+        </header>
+        <div id="sections">
+            <section>
+                <h3>Create a Task</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="taskName">Task Name</label>
+                        <input type="text" class="form-control" id="taskName">
+                    </div>
+                    <div class="form-group">
+                        <label for="taskDate">Date</label>
+                        <input type="date" class="form-control" id="taskDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="taskAssignedTo">Assigned To</label>
+                        <input type="text" class="form-control" id="taskAssignedTo">
+                    </div>
+                    <button type="button" id="submit">Submit</button>
+                </form>
+            </section>
+            <section>
+                <h3>Existing Tasks</h3>
+                <div id="tableBox">
+                    <table id="taskList"></table>
+                </div>
+            </section>
+        </div>
+    </div>
     <script src="data.js"></script>
     <script src="jsfile.js"></script>
 </body>
+
 </html>
