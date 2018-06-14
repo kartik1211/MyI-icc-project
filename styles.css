@@ -64,6 +64,7 @@ input{
     background: #f7f7f7;
     height: 35px;
     margin-top: 1%;
+    font-size:16px;
 }
 
 .form-group,#submit{
